@@ -1,0 +1,53 @@
+namespace Klassenbuch
+{
+    public class Program
+    {
+
+        /*
+         *  TODO THEORIEFRAGE
+         * 
+         */
+        
+        
+        static void Main(string[] args)
+        {
+            // Todo
+            throw new NotImplementedException();
+        }
+
+        public static List<Schueler> Import(string path)
+        {
+            // Todo
+            throw new NotImplementedException();
+        }
+
+        public static void RemoveAllKlassenbucheintraegeOlderThan(int days)
+        {
+            // Todo
+            throw new NotImplementedException();
+        }
+        
+        public static Schulklasse GetSchulklasse(string classname)
+        {
+            // Todo
+            throw new NotImplementedException();
+        }
+        public static List<Schueler> AddToDatabase(List<Schueler> schuelers, int classId)
+        {
+            // Todo
+            throw new NotImplementedException();
+        }
+
+        public static void AddKlassenbucheintrag(string text, int schuelerId)
+        {
+            // Todo
+            throw new NotImplementedException();
+        }
+
+        public static List<Schueler> GetGefaerdeteSchueler(string classname)
+        {
+            // Todo
+            throw new NotImplementedException();
+        }
+    }
+}
