@@ -11,9 +11,7 @@ namespace MT4Hofer
     {
         static void Main(string[] args)
         {
-            /*Theoriefrage: Ein Array nimmt nur einen Datentyp an - es kann zb ein Array für ints sein, dann
-             nimmt es keine Strings. Ein Tupel kann Strings und ints und alle Datentypen mischen. Außerdem nimmt
-            ein Tupel maximal 7 items. Bei einem Array kann ich einfach bestimmen wie groß es sein soll. */
+         
 
             string path = @"D:\VisualStudio2017\Meins\MT4Hofer\4a.txt";
 
@@ -29,20 +27,12 @@ namespace MT4Hofer
 
                 int aktasId = context.Schueler.FirstOrDefault(x => x.Nachname == "Aktas" && x.Vorname == "Franz").Id;
                 AddKlassenbucheintrag("hallo", aktasId);
-                AddKlassenbucheintrag("noch ein Eintrag", aktasId);
-                AddKlassenbucheintrag("so brav", aktasId);
+                AddKlassenbucheintrag("Versuchte Änderung", aktasId);
+                AddKlassenbucheintrag("und noch eine", aktasId);
                 AddKlassenbucheintrag("also echt", aktasId);
 
 
-                //Leider geht bei mir Franz Aktas in die Klasse 1, nicht 4a, deshalb hab ich es doppelt:
-                //einmal mit 4a und einmal mit Klasse 1 - mit Klasse 1 wird er gefunden und ausgegeben.
-
-                //List<Schueler> gefaehrdeteSchueler = GetGefaerdeteSchueler("4a");
-
-                //foreach (var item in gefaehrdeteSchueler)
-                //{
-                //    Console.WriteLine("Vorname: " + item.Vorname + "Nachname" + item.Nachname);
-                //}
+             
 
                 List<Schueler> gefaehrdeteSchueler = GetGefaerdeteSchueler("Klasse 1");
 
